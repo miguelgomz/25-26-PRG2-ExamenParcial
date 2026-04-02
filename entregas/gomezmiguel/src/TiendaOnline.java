@@ -10,3 +10,15 @@ public class TiendaOnline {
         this.pedidoRealizado = pedido;
         this.fechaDeOperacion = fecha;
     }
+    public String comprar() {
+        pedidoRealizado.quitarStock();
+        return "Procesado: La compra se ha completado correctamente.";
+    }
+
+    public String verProductos() {
+        return "Catálogo: " + productoEnVenta.mostrarProducto();
+    }
+
+    public String realizarPedido() {
+        return pedidoRealizado.pedidoRealizado() + " [" + pedidoRealizado.verEstado() + "]";
+    }
