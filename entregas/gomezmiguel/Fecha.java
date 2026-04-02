@@ -1,15 +1,15 @@
 public class Fecha {
     private int dia;
     private int mes;
-    private int ano;
+    private int año;
 
-    public Fecha(int dia, int mes, int ano) {
+    public Fecha(int dia, int mes, int año) {
         this.dia = dia;
         this.mes = mes;
-        this.ano = ano;
+        this.año = año;
     }
 
     public String mostrarFecha() {
-        return dia + "/" + mes + "/" + ano;
+        return dia + "/" + mes + "/" + año;
     }
 }
